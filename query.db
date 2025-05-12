@@ -1,0 +1,13 @@
+CREATE DATABASE db_film;
+USE db_film;
+
+CREATE TABLE film (
+    id_film INT AUTO_INCREMENT PRIMARY KEY,
+    judul VARCHAR(100),
+    genre VARCHAR(50),
+    tahun YEAR,
+    rating DECIMAL(3,1)
+);
+
+INSERT INTO film (judul, genre, tahun, rating) 
+VALUES ('Inception', 'Sci-Fi', 2010, 8.8);
